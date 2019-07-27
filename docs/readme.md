@@ -34,7 +34,7 @@ Ein Account ist anzulegen (steffen.sander verwendet)
 Download der Version mit VirtualBox durchgeführt.  
 `cmd C:\SanderS\Tools\haxm-windows_v7_5_1` öffnen, um haxm_check.exe auszuführen  
     VT support -- yes  
-    NX support -- yes
+    NX support -- yes  
 GenyMotion settings -> ADB tab, choose **Use custom Android SDK Tools**
 
 7. Install "react-native-elements"
