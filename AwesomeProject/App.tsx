@@ -1,5 +1,6 @@
 import React from 'react';
 import {Platform, StyleSheet, Text, View, Image} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 /**
  * Sample React Native App
@@ -16,15 +17,18 @@ const instructions = Platform.select({
 });
 
 type Props = {};
+
+// see for gradient: https://medium.com/@Chilid/react-native-and-how-to-start-your-first-application-cc9afdea2eca 
 export default class App extends React.Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
+      <LinearGradient colors={['#3399ff', '#55ddff']}
+        style={styles.container}>
         <Image style={styles.logo} source={require('./assets/ssvl_logo_2017.gif')} />
         <Text style={styles.welcome}>Meine Trainings-App</Text>
         <Text style={styles.subTitle}>Schwimm-Sport-Verein Lahr von 1921 e.V.</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+      </LinearGradient>
     );
   }
 }
@@ -55,7 +59,7 @@ const styles = StyleSheet.create({
   instructions: {
     textAlign: 'center',
     fontSize: 9,
-    color: '#333333',
+    color: '#555555',
     marginTop: 40,
     marginBottom: 5
   },
