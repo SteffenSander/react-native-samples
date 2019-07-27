@@ -1,4 +1,4 @@
-#1 Installationshinweise
+# Installationsnotizen
 
 
 1. React Native installieren
@@ -26,7 +26,7 @@ Bei den Optionen LAN und Local traten Verbindungsfehler auf,
 auch wenn die angegebenen Ports freigegeben wurden.  
 Troubleshooting:
     1. https://windowsreport.com/open-firewall-ports/ (19000-19002)  
-    2. https://discuss.erpnext.com/t/virtualbox-wont-run-raw-mode-unavailable-courtesy-of-hyper-v/34541 
+    2. https://discuss.erpnext.com/t/virtualbox-wont-run-raw-mode-unavailable-courtesy-of-hyper-v/34541 (<-- Docker, Hyper-V u.a.) 
 
 6. Device Emulator installieren (funktionierte nach Win 10 Update 19/3)
 Google-Suche mit "genymotion free" -> /fun-zone/  
@@ -35,16 +35,16 @@ Download der Version mit VirtualBox durchgeführt.
 `cmd C:\SanderS\Tools\haxm-windows_v7_5_1` öffnen, um haxm_check.exe auszuführen  
     VT support -- yes  
     NX support -- yes
-GenyMotion settings -> ADB tab, choose **Use custom Android SDK Tools"
+GenyMotion settings -> ADB tab, choose **Use custom Android SDK Tools**
 
-7. Install 'react-native-elements"
+7. Install "react-native-elements"
 npm WARN react-native-elements@1.1.0 requires a peer of react-native-vector-icons@>6.0.0 but none is installed. You must install peer dependencies yourself.  
 npm WARN react-native-ratings@6.3.1 requires a peer of react@^16.0.0 but none is installed. You must install peer dependencies yourself.  
 
 8. Installieren von React Native CLI und Abhängigkeiten
 Quelle: [react native getting-started](https://facebook.github.io/react-native/docs/getting-started)
     1. [Chocolatey](https://facebook.github.io/react-native/docs/signed-apk-android) installieren
-    2. choco install -y nodejs.install python2 jdk8
+    2. choco install -y nodejs.install python2 jdk8 (python2 ausgelassen, weil python3 bereits vorhanden ist)
     3. `npm install -g react-native-cli`
     4. [Android Studio](https://developer.android.com/studio/index.html)  
         C:\Users\steff\AppData\Local\Android\android-sdk  
@@ -59,7 +59,6 @@ Ein Dependency Manager für Windows, siehe [yarnpkg.com](https://yarnpkg.com/en/
 10. Neues Testprojekt erstellen (funktionierte nach Win 10 Update 19/3)
 `react-native init AwesomeProject --version react-native@next`
 `cd AwesomeProject && react-native run-android`
-
 
 ```json
   "privacy": "public",
