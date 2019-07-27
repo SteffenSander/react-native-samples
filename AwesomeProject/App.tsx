@@ -22,10 +22,10 @@ type Props = {};
 export default class App extends React.Component<Props> {
   render() {
     return (
-      <LinearGradient colors={['#3399ff', '#55ddff']}
+      <LinearGradient colors={['#55eeff', '#3399ff', '#3388ff']}
         style={styles.container}>
         <Image style={styles.logo} source={require('./assets/ssvl_logo_2017.gif')} />
-        <Text style={styles.welcome}>Meine Trainings-App</Text>
+        <Text style={styles.welcome}>Trainingsplaner</Text>
         <Text style={styles.subTitle}>Schwimm-Sport-Verein Lahr von 1921 e.V.</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </LinearGradient>
