@@ -1,0 +1,10 @@
+{
+  "name": "AwesomeProject",
+  "slug": "AwesomeProject",
+  "displayName": "Meine Trainings beim SSV Lahr",
+  "splash": {
+    "image": "./assets/ssvl_logo_2017.gif",
+    "resizeMode": "contain",
+    "backgroundColor": "#3399ff"
+  }
+}

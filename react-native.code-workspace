@@ -5,7 +5,12 @@
 		},
 		{
 			"path": "StepCounter"
+		},
+		{
+			"path": "AwesomeProject"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
 }
